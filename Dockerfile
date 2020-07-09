@@ -1,6 +1,6 @@
 FROM python:alpine
 
-RUN pip3 install pysnyk click kubernetes 
+RUN pip3 --no-cache-dir install pysnyk click kubernetes 
 
 COPY . /app
 
